@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* 768px+ and orientation: landscape */
+
+@media (min-width: 768px) {
+  main {
+    width: 768px;
+  }
+  #burguer {
+    display: none;
+  }
+  menu {
+    display: block;
+    text-align: left;
+  }
+  menu ul {
+    display: block;
+  }
+  menu li {
+    display: inline-block;
+    width: 10vw;
+    text-align: center;
+  }
+}
