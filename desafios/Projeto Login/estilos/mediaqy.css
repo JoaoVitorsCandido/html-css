@@ -1,1 +1,62 @@
 @charset "UTF-8";
+
+/*
+Celular max 768px
+Tablet max 992px
+Telas maiores min 992px
+*/
+
+@media screen and (min-width: 768px) {
+  body {
+    background: linear-gradient(to bottom, #515C9C, #66CDD9);
+  }
+  
+  #login {
+    width: 70%;
+    height: 400px;
+  }
+  
+  #imagemlogin {
+    float: left;
+    width: 30%;
+    height: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+  }
+  
+  #form {
+    float: right;
+    width: 50%;
+    margin-left: 50px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+  background: linear-gradient(to bottom, #515C9C, #66CDD9);
+}
+  
+  #login {
+    width: 80%;
+    height: 450px;
+  }
+  
+  #imagemlogin {
+    float: right;
+    width: 35%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  #form {
+    float: left;
+    width: 90%;
+    margin-left: 0px;
+    margin-top: none;
+  }
+  #form h1 {
+    text-align: left;
+  }
+}

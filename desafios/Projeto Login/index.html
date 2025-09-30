@@ -7,24 +7,37 @@
   <title></title>
   <link rel="stylesheet" href="estilos/style.css">
   <link rel="stylesheet" href="estilos/mediaqy.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 
 <body>
   <main>
     <section id="login">
+      
       <div id="imagemlogin">
-        foto
+        
       </div>
       <div id="form">
         <h1>Login</h1>
-        <p>Seja bem-vindo(a), faça login para ter acesso à sua conta</p>
+        <p>Seja bem-vindo(a), faça login para ter acesso à sua conta.</p>
         <form action="" method="post" accept-charset="utf-8">
           
-          <input type="email" name="email" id="iemail">
-          <input type="password" name="senha" id="isenha">
+          <div id="conteineremail">
+            <span id="user" class="material-symbols-outlined">account_circle</span>
+          <input type="email" name="email" id="iemail" required placeholder="Seu email" maxlength="30">
+          </div>
+          
+          <div id="conteinersenha">
+            <span id="chave" class="material-symbols-outlined">passkey</span>
+          <input type="password" name="senha" id="isenha" required placeholder="Sua Senha" senhaminlength="8" maxlength="20">
+          <label for="isenha">Senha</label>
+          </div>
+          <input type="submit" value="Enviar">
+          <a class="botao" href="exemplo.html">Esqueci a senha</a>
           
         </form>
       </div>
+      
     </section>
   </main>
   
