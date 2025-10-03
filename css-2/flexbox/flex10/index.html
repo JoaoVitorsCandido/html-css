@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    
+    *{
+      padding: 0px;
+      margin: 0px;
+    }
+    
+    body {
+      height: 100vh;
+      width: 100vw;
+    }
+    
+    main{
+      width: 600px;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    
+    div {
+      border: 1px solid black;
+      background: lightblue;
+      flex-basis: 100px;
+      text-align: center;
+    }
+    
+    #ia {
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+    
+    #ib {
+      flex-grow: 4;
+      flex-shrink: 0;
+    }
+    
+    #ic {
+      flex-shrink: 1;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <main>
+  <div id="ia">A</div>
+  <div id="ib">B</div>
+  <div id="ic">C</div>
+  </main>
+</body>
+
+</html>
