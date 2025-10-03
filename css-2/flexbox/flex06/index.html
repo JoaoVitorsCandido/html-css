@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    
+    .conteiner {
+      height: 200px;
+      display: flex;
+      background: red;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .items {
+      background: blue;
+      color: white;
+      border: 1px solid black;
+      text-align: center;
+      padding: 10px;
+      
+    }
+    
+    #i1 {
+      order: -2;
+    }
+    #i2, #i4 {
+      order: 0;
+    }
+    #i3 {
+      order: -4;
+    }
+    #i5 {
+      order: 5;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <div class="conteiner">
+    <div id="i1" class="items">A</div>
+    <div id="i2" class="items">B</div>
+    <div id="i3" class="items">C</div>
+    <div id="i4" class="items">D</div>
+    <div id="i5" class="items">E</div>
+    <div id="i6" class="items">F</div>
+    <div id="17" class="items">G</div>
+  </div>
+</body>
+
+</html>
