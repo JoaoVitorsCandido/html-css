@@ -16,8 +16,8 @@ body {
 header {
   color: white;
   background: gray;
-  text-align: center;
   padding-bottom: 10px;
+  text-align: center;
 }
 header h1 {
   padding: 10px;
