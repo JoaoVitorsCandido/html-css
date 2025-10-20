@@ -6,36 +6,36 @@
   box-sizing: border-box;
 }
 
-body {
+.conteiner {
   height: 100vh;
   width: 100vw;
-}
-
-.conteiner {
   border: 2px solid red;
   display: grid;
+  text-align: center;
   
-  grid-template: repeat(8, 50px) / repeat(4, 1fr);
+  grid-template: 80px 40px 1fr 40px / 1fr 150px;
+  gap: 5px;
 }
 
 div {
   border: 2px solid blue;
+  padding: 10px;
 }
 
 .item1 {
-  grid-area: 1 / 1 / 3 / -1;
+  grid-area: 1 / 1 / 2 / -1;
 }
 
 .item2 {
-  grid-area: 3/ 1 / 4 / -1;
+  grid-area: 2 / 1 / 3 / -1;
 }
 
 .item3 {
-  grid-area: 4 / 1 / -2 / -2;
+  grid-area: 3 / 1 / -2 / -2;
 }
 
 .item4 {
-  grid-area: 4 / -2 / -2 / -1;
+  grid-area: 3 / -2 / -2 / -1;
 }
 
 .item5 {
