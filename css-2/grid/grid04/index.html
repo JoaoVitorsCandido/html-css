@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style>
+    
+    * {
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+    }
+    
+    body {
+      height: 100vh;
+    }
+    
+    main {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    .conteiner {
+      display: grid;
+      width: 300px;
+      height: 300px;
+      grid-template: repeat(3, 100px) / repeat(4, 1fr);
+      gap: 5px;
+    }
+    
+    .item1 {
+      background: red;
+      
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+    .item2 {
+      background: blue;
+      
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    .item3 {
+      background: green;
+      
+      grid-row-start: 2;
+      grid-row-end: 4;
+      grid-column-start: 3 ;
+      grid-column-end: -1;
+    }
+    
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="conteiner">
+      <div class="item1">A</div>
+      <div class="item2">B</div>
+      <div class="item3">C</div>
+    </section>
+  </main>
+</body>
+
+</html>
