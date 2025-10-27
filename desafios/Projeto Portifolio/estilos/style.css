@@ -124,6 +124,7 @@ article {
 }
 article h2 {
   color: var(--destaque);
+  margin-bottom: 20px;
 }
 
 #skill-conteiner {
@@ -134,7 +135,6 @@ article h2 {
 
 .item {
   display: flex;
-  margin: 10px;
   justify-content: space-between;
 }
 
@@ -162,5 +162,36 @@ span {
 @media (min-width: 768px) {
   #skill-conteiner {
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
+}
+
+#formacao-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.curso{
+  background: var(--fundo-principal);
+  padding-left: 15px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-left 0.3s;
+}
+.curso:hover {
+  border-left: 15px solid var(--destaque);
+  cursor: pointer;
+}
+.curso p {
+  font-size: 0.8em;
+  color: var(--texto);
+}
+
+.periodo {
+  font-weight: bold;
+}
+
+.instituicao {
+  color: var(--destaque-inverso);
 }
