@@ -111,6 +111,8 @@ main {
   color: var(--destaque-inverso);
 }
 
+/* Fim ficha */
+
 #detalhes {
   grid-column: 2;
   margin-bottom: 20px;
@@ -166,6 +168,8 @@ span {
   }
 }
 
+/* Fim skill */
+
 #formacao-conteiner {
   display: flex;
   flex-direction: column;
@@ -177,7 +181,7 @@ span {
   padding-left: 15px;
   border-radius: 8px;
   border-left: 5px solid var(--destaque-inverso);
-  transition: border-left 0.3s;
+  transition: border-left 0.5s;
 }
 .curso:hover {
   border-left: 15px solid var(--destaque);
@@ -193,5 +197,78 @@ span {
 }
 
 .instituicao {
+  color: var(--destaque-inverso);
+}
+
+/* Fim formacao */
+
+#projetos-conteiner {
+  display: flex;
+  flex-direction: column;
+  gap: 20px
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: var(--fundo-principal);
+  padding: 10px;
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  transition: border-left 0.5s;
+}
+.projeto:hover {
+  border-left: 15px solid var(--destaque);
+  cursor: pointer;
+}
+
+.foto {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .projeto{
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  
+  .projeto-info {
+    max-width: 80%;
+  }
+  
+  .foto {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    max-width: 20%;
+    max-height: 200px;
+  }
+}
+
+/* Fim projetos */
+
+a {
+  text-decoration: none;
+  color: var(--texto);
+}
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background: var(--destaque);
+  text-align: center;
+  color: white;
+  padding: 15px;
+}
+footer a {
+  color: white;
+  font-weight: bolder;
+}
+footer a:hover {
   color: var(--destaque-inverso);
 }
