@@ -117,7 +117,6 @@ main {
 
 #detalhes {
   grid-column: 2;
-  margin-bottom: 20px;
 }
 
 article {
@@ -161,13 +160,6 @@ span {
   background: var(--destaque-inverso);
   height: 8px;
   border-radius: 4px;
-}
-
-@media (min-width: 768px) {
-  #skill-conteiner {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
 }
 
 /* Fim skill */
@@ -231,24 +223,6 @@ span {
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
-}
-
-@media (min-width: 768px) {
-  .projeto{
-    justify-content: space-between;
-    flex-direction: row-reverse;
-  }
-  
-  .projeto-info {
-    max-width: 80%;
-  }
-  
-  .foto {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    max-width: 20%;
-    max-height: 200px;
-  }
 }
 
 /* Fim projetos */
