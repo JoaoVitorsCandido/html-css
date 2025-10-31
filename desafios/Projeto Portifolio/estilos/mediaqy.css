@@ -15,6 +15,11 @@
   #detalhes {
     grid-column: 3 / 4;
   }
+  
+  article {
+    margin-top: 0px;
+    outline: 3px solid var(--fundo-principal-dark)
+  }
 
   #skill-conteiner {
     grid-template-columns: 1fr 1fr;
@@ -36,3 +41,4 @@
     width: 170px;
     max-height: 200px;
   }
+}

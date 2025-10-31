@@ -1,27 +1,98 @@
 @charset "UTF-8";
 
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
-*/
 :root {
   --fundo-principal: #f5f5f5;
   --texto: #222222;
-  --texto-inverso: #ffffff;
   --destaque: #0077ff;
   --destaque-inverso: #66bbff;
   --fundo-card: #ffffff;
+  
+  /* Dark */
+  --fundo-principal-dark: #1a1a1a;
+  --destaque-dark: #E93300;
+  --destaque-dark-inverso: #942000;
+  --texto-inverso: #ffffff;
+  --fundo-card-dark: #333333;
 }
+
+body.escuro{
+  background: var(--fundo-principal-dark);
+  color: var(--texto-inverso);
+}
+body.escuro h2 {
+  color: var(--destaque-dark);
+}
+.escuro header {
+  background: var(--destaque-dark);
+  color: var(--texto);
+}
+
+.escuro #menu a {
+  color: var(--texto);
+}
+
+.escuro article, .escuro #ficha {
+  background: var(--fundo-card-dark);
+}
+
+.escuro #ficha h1, .escuro #social a {
+  color: var(--destaque-dark);
+}
+
+.escuro #ficha img.foto {
+  border-color: var(--fundo-card-dark);
+  outline-color: var(--destaque-dark);
+}
+
+.escuro #formacao-conteiner div, .escuro #projetos-conteiner div {
+  background: var(--fundo-principal-dark);
+  border-left-color: var(--destaque-dark-inverso);
+}
+.escuro #formacao-conteiner p {
+  color: var(--texto-inverso);
+}
+.escuro .instituicao {
+  color: var(--destaque-dark-inverso);
+}
+
+.escuro .info, .escuro.item, .escuro #skill-conteiner {
+  background: var(--fundo-card-dark);
+}
+.escuro .porcent {
+  color: var(--destaque-dark);
+}
+
+.escuro .barra {
+  background: var(--fundo-principal-dark);
+}
+
+.escuro .progresso {
+  background: var(--destaque-dark-inverso);
+}
+
+.escuro footer, .escuro footer a {
+  background: var(--destaque-dark);
+  color: var(--texto);
+}
+
+/* Hover */
+
+.escuro article #formacao-conteiner div:hover {
+  border-left-color: var(--destaque-dark);
+}
+.escuro article #projetos-conteiner div:hover {
+  border-left-color: var(--destaque-dark);
+}
+
+/* Fim hover */
+
+/* Fim dark */
 
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  transition: background 0.3s, color 0.3s;
 }
 
 body {
@@ -151,7 +222,7 @@ span {
 
 .barra {
   height: 8px;
-  width: 100%;
+  width: 95%;
   margin: 10px;
   border-radius: 4px;
   background: var(--fundo-principal);
@@ -226,6 +297,10 @@ span {
 }
 
 /* Fim projetos */
+
+article #formacao-conteiner div, #projetos-conteiner div {
+  background: var(--fundo-principal);
+}
 
 a {
   text-decoration: none;
