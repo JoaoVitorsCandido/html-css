@@ -38,3 +38,24 @@ navLinks.forEach(link => {
     }
   });
 });
+  
+const input = document.getElementById("isrch")
+
+input.addEventListener("input", function() {
+  
+const textoBusca = input.value.toLowerCase()
+const projetos = document.querySelectorAll(".projeto")
+
+  projetos.forEach(function(projeto) {
+
+    const textoProjeto = projeto.textContent.toLowerCase()
+    
+      if (textoProjeto.includes(textoBusca)) {
+      projeto.style.display = "block"
+    }else {
+      projeto.style.display = "none"
+    }
+  }
+  )
+}
+)

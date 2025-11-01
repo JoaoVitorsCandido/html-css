@@ -92,7 +92,7 @@ body.escuro h2 {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  transition: background 0.3s, color 0.3s;
+  transition: background 0.3s, color 0.3s, border 0.3s, outline 0.3s;
 }
 
 body {
